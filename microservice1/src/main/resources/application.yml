@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: ms1
+  profiles:
+    active: dev
+  config:
+    import: optional:configserver:http://configmgr:1234@localhost:9000

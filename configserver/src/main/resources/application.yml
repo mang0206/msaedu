@@ -1,0 +1,65 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:mang0206/springcloudconfig.git
+          ignoreLocalSshSettings: true
+          private-key: |
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
+
